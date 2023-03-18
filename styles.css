@@ -1,0 +1,72 @@
+    body
+    {
+        margin: 0;
+        background-image: url(papajskeleton.gif);
+        background-size:25%;
+    }
+    h1
+    {
+        text-align: center;
+        animation-delay: 2s;
+        animation: fontcolor 10s infinite linear;
+    }
+    #points-div
+    {
+        height: 80px;
+        width: 150px;
+        margin-bottom: 200px;
+        background-color: rgba(255, 255, 255, 0.308); 
+        border-radius: 10px;
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+        animation: fontcolor 10s infinite linear;  
+    }
+    #first
+    {
+        height: 89vh;
+        width: 100%;
+        display: flex;
+        justify-items: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    #griddy
+    {
+
+        animation: spin 1s infinite linear;
+    }
+    #slider-div
+    {
+        position: bottom 20px;
+        
+    }
+    input[type="range"] {
+        appearance: none;
+        background-color: rgb(206, 206, 147);
+        border-radius: 10px;
+        color: antiquewhite;
+        cursor: pointer;
+        width: 10rem;
+      }
+
+
+    @keyframes spin
+    {
+    
+        0%   {right:0px; top:0px; transform: rotateZ(0);}
+        100% {right:0px; top:0px; transform: rotateZ(360deg);}
+    }
+    @keyframes fontcolor
+    {
+        0%{color: red;}
+        15%{color: orange;}
+        30%{color: greenyellow;}
+        45%{color: green;}
+        60%{color: lightskyblue}
+        75%{color: blue;}
+        90%{color: blueviolet;}
+        100%{color: violet;}
+    }
+    
